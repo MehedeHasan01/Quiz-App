@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App Dessing by Mehedi Hasan Roni</title>
+    <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/0dec652169.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="root">
+<!-- Background Color Change Button -->
+    <div class="BgColorBtn">
+
+        <button id="bgcolorChange">Change Bg Color</button>
+        <button id="AutochangeColorBtn"> Auto Change Bg Color</button>
+        <button id="StopAutochangeColorBtn" style="display: none;">Stop Auto Bg Color</button>
+
+    </div>
+    <div >
+            <!-- quiz-App -->
+
+
+            <div class="quiz-App" >
+                <div class="quiz-App-Img">
+                    <img src="./img/Question.svg" alt="">
+                </div>
+                <div class="quiz-App-text">
+                    <h3>Quiz App With Fixed Time</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aperiam, numquam minima rem deserunt dolores consectetur veritatis illo iure incidunt sint nihil!</p>
+                    <h3>Quiz App With Fixed Time</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, in.</p>
+                </div>
+                <div class="start-btn">
+                    <button>Start Quiz</button>
+                </div>
+            </div>
+
+
+            <!-- Quiz  Rules -->
+            <div class="quiz-Rules">
+                <div class="rules-header" >Some Rules of this Quiz</div>
+                <div class="rules-List">
+                    <ol>
+                        <li>You will have only <span style="color: #007bff;"> 15 seconds</span> per each question.</li>
+                        <li>Once you select your answer, it can't be undone.</li>
+                        <li>You can't select any option once time goes off.</li>
+                        <li>You can't exit from the Quiz while you're playing.</li>
+                        <li>You'll get points on the basis of your correct answers.</li>
+                    </ol>
+                </div>
+                <div class="quiz-Rules-Btn">
+                    <button class="exitBtn">Exit Quiz</button>
+                    <button class="ContinueBtn">Continue</button>
+                </div>
+
+            </div >
+
+            <!--  Questions   -->
+            <div class="Questions" >
+                <header class="QuestionsHeader">
+                    <div class="tetx2">Start Exam</div>
+                    <div class="TimeCount">
+                        <div class="leftTime">Time Left</div>
+                        <div class="seconds">15</div>
+                        <div class="timeBar"></div>
+                    </div>
+                </header>
+
+                <section class="QuestionsSection">
+                    <div class="title">
+                        <!-- <span>Who is the founder of C programming language?</span> -->
+                    </div>
+                    <div class="MyOptions">
+                        <!--
+                        <div class="Options">
+                            <span>Hyper Text Preprocessor</span>
+                        </div> -->
+                        <div><i class="fas fa-check"></i></div>
+
+                    </div>
+                </section>
+
+                <footer class="QuestionsFooter">
+                    <div class="border"></div>
+                    <div class="Total-questions">
+                        <!-- 1 of 5 Questions -->
+                    </div>
+                    <button class="textBtn">Next Quiz</button>
+                </footer>
+
+            </div>
+
+            <!--  Quiz Reslut  part -->
+
+            <div class=" Quiz-Result" >
+                <div class="Win-Image">
+                    <img src="./img/winner.svg" alt="winner">
+                </div>
+                <div class="complet-Text">You Have Finished This Exam.</div>
+                <div class="score_text">
+                    <!-- <span>Carry On👍 You Got <p>0</p>Out Of <p>5</p></span> -->
+                </div>
+                <Button class="quitBtn">Quit Quiz</Button>
+            </div>
+
+
+            <script src="./JS/script.js"></script>
+            <script src="./JS/questions.js"></script>
+
+
+    </div>
+</body>
+</html>
